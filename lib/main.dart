@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:schoolapp/views/welcome.dart';
+import 'package:schoolapp/views/welcome_view/welcome.dart';
 
 void main() {
   runApp(const MyApp());
