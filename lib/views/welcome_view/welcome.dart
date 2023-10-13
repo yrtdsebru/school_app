@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:schoolapp/constants/colors.dart';
 import 'package:schoolapp/constants/images.dart';
+import 'package:schoolapp/views/signin_view/signin.dart';
 
 class WelcomeView extends StatelessWidget {
   // bir ker kez oluşturduktan sonra içeriği ve durumu güncellenmeyen widgetlar
@@ -87,7 +88,13 @@ class WelcomeView extends StatelessWidget {
                                   20), // buton kenarlarını yuvarlak hale getiriyor.
                             )),
                         onPressed: () {
-                          // ? will work on this soon.
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) =>
+                                  const SignView(), // butona click vererek diğer sayfa gitmesini sağlıyoruz.
+                            ),
+                          );
                         },
                         child: const Row(
                           mainAxisAlignment: MainAxisAlignment
