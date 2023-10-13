@@ -91,8 +91,7 @@ class WelcomeView extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) =>
-                                  const SignView(), // butona click vererek diğer sayfa gitmesini sağlıyoruz.
+                              builder: (context) => (const SignView()),
                             ),
                           );
                         },
